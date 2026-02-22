@@ -23,9 +23,9 @@ root_router.include_routers(start_router, animals_router, review_router)
 # Головна функція пакету
 async def main() -> None:
     # Дістанемо токен бота з середовища
-    TOKEN = getenv('7273541603:AAGFL6jXgHpgEdpUqfqLZwQJp4aBBOnMHeY')
+    TOKEN = getenv('')
     # Створимо об'єкт Bot
-    bot = Bot("7273541603:AAGFL6jXgHpgEdpUqfqLZwQJp4aBBOnMHeY", default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot("", default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     dp = Dispatcher()
     dp.include_router(root_router)
